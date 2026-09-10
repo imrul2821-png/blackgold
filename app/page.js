@@ -1,28 +1,26 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import Contact from "@/components/Contact";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center">
-      <div className="text-center px-6">
-        <p className="text-[#d4af37] uppercase tracking-[0.4em] text-sm mb-6">
-          Creative • Digital • Premium
-        </p>
+    <>
+      <Navbar />
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          Building Digital{" "}
-          <span className="text-[#d4af37]">Experiences</span>
-        </h1>
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Contact />
+      </main>
 
-        <p className="max-w-2xl mx-auto text-gray-400 mb-8">
-          We create modern, high-performance digital experiences
-          for brands, businesses and ambitious creators.
-        </p>
-
-        <a
-          href="#services"
-          className="inline-block px-7 py-3 bg-[#d4af37] text-black font-semibold rounded-full"
-        >
-          Explore Services
-        </a>
-      </div>
-    </main>
+      <footer className="border-t border-white/10 py-8 px-6">
+        <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+          © 2026 BLACK<span className="gold">GOLD</span>. All rights reserved.
+        </div>
+      </footer>
+    </>
   );
 }
