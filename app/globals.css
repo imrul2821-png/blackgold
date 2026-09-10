@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+  color: #f5f5f5;
+}
+
+.gold {
+  color: #d4af37;
+}
+
+.gold-bg {
+  background-color: #d4af37;
+}
+
+.gold-border {
+  border-color: #d4af37;
+}
+
+.gold-glow {
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.08);
+}
+
+::selection {
+  background: #d4af37;
+  color: #050505;
+}
